@@ -113,7 +113,7 @@ namespace TheYawningDragon.Ascendancy.Library
             writer.Write(format.BitsPerSample);
 
             WavDataChunk dataChunk = new WavDataChunk();
-            dataChunk.Size = (uint)content.Length;
+            dataChunk.Size = (uint)data.Length;
 
             writer.Write(dataChunk.ID);
             writer.Write(dataChunk.Size);
