@@ -96,7 +96,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\AscendancyLibrary\AscendancyLibrary.csproj">
+    <ProjectReference Include="..\Ascendancy.Assets\Ascendancy.Assets.csproj">
       <Project>{3D301418-A0EB-48D1-91EA-A021EF88B738}</Project>
       <Name>AscendancyLibrary</Name>
     </ProjectReference>
