@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("Ascendancy Library")]
 [assembly: AssemblyDescription("Library that provides access to Ascendancy art assets.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("The Yawning Dragon")]
+[assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("AscendancyLibrary")]
-[assembly: AssemblyCopyright("Copyright © The Yawning Dragon 2009")]
+[assembly: AssemblyCopyright("Copyright © 2019 Attila Cséki")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

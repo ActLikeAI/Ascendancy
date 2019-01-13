@@ -1,4 +1,7 @@
-﻿public class WavRiffChunk
+﻿// Copyright (c) 2019 Attila Cséki.
+// Licensed under the MIT license. See LICENCE file in the project root for full license information.
+
+public class WavRiffChunk
 {
     public char[] ID;
     public uint TotalSize; //file size - 8

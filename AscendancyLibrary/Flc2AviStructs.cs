@@ -1,17 +1,5 @@
-﻿//TFLCHeader =
-//    packed record
-//          FileSize: Cardinal;
-//          FlcType, FramesInFirstSegment, Width, Height, BitsPerPixel, Flags: Word;
-//          DelayBetweenFrames: Cardinal;
-//          Reserved1: Word;
-//          DateCreated, ApplicationCreated, DateUpdated, ApplicationUpdated: Cardinal;
-//          AspectX, AspectY, ExtraFlags, KeyFrames, TotalFrames: Word;
-//          RequiredMemory: Cardinal;
-//          MaximumRegions, NumberTransparentLevels: Word;
-//          Reserved2: Array [1..24] of Byte;
-//          Frame1Offset, Frame2Offset: Cardinal;
-//          Reserved3: Array [1..40] of Byte;
-
+﻿// Copyright (c) 2019 Attila Cséki.
+// Licensed under the MIT license. See LICENCE file in the project root for full license information.
 
 public struct FlcHeader
 {
