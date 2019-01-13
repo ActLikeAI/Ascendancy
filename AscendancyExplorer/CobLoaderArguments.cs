@@ -5,7 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace TheYawningDragon.AscendancyExplorer
+namespace Ascendancy.Explorer
 {
     public class CobLoaderArguments
     {

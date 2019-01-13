@@ -1,12 +1,9 @@
 ﻿// Copyright (c) 2019 Attila Cséki.
 // Licensed under the MIT license. See LICENCE file in the project root for full license information.
 
-using System;
-using System.Collections.Generic;
-using System.Text;
 using System.IO;
 
-namespace TheYawningDragon.Ascendancy.Library
+namespace Ascendancy.Assets
 {
     public class RawFile : SoundFile
     {
@@ -51,10 +48,9 @@ namespace TheYawningDragon.Ascendancy.Library
             writer.Write(content);
 
             writer.Close();
-            wavStream.Close();
-       
-            
+            wavStream.Close();      
         }
+
 
         public new static RawFile Load(CobArchive parent, string fileName)
         {

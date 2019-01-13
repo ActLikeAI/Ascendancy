@@ -2,11 +2,9 @@
 // Licensed under the MIT license. See LICENCE file in the project root for full license information.
 
 using System;
-using System.Collections.Generic;
-using System.Text;
 using System.IO;
 
-namespace TheYawningDragon.Ascendancy.Library
+namespace Ascendancy.Assets
 {
     public class CobFile
     {
@@ -45,7 +43,6 @@ namespace TheYawningDragon.Ascendancy.Library
                     break;
                 }
 
-
             if (index < 0)
                 throw new ArgumentException("Requested file doesn't exist");
 
@@ -62,8 +59,8 @@ namespace TheYawningDragon.Ascendancy.Library
 
             reader.Close();
             file.Close();
-
         }
+
 
         public void Save(string outDirectory)
         {
@@ -95,13 +92,14 @@ namespace TheYawningDragon.Ascendancy.Library
             file.Close();        
         }
 
+
         public void Save()
         { this.Save(Directory.GetCurrentDirectory()); }
         
+
         public static CobFile Load(CobArchive parent, string fileName)
         {
             return new CobFile(parent, fileName);
         }
-
     }
 }

@@ -8,8 +8,8 @@
     <ProjectGuid>{504D1B65-9A61-420C-A69C-C9758C3D0EE3}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TheYawningDragon.AscendancyExplorer</RootNamespace>
-    <AssemblyName>AscendancyExplorer</AssemblyName>
+    <RootNamespace>Ascendancy.Explorer</RootNamespace>
+    <AssemblyName>Ascendancy.Explorer</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <FileUpgradeFlags>

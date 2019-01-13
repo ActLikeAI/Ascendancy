@@ -3,11 +3,10 @@
 
 using System;
 using System.Collections.Generic;
-using System.Text;
-using System.IO;
 using System.Drawing;
+using System.IO;
 
-namespace TheYawningDragon.Ascendancy.Library
+namespace Ascendancy.Assets
 {
     public class FlcFile : CobFile
     {
@@ -55,7 +54,6 @@ namespace TheYawningDragon.Ascendancy.Library
             header.Frame2Offset = reader.ReadUInt32();
 
             header.Reserved3 = reader.ReadBytes(40);
-
             
             int chunkNumber = 0;
             Color[] pallete = new Color[256];
@@ -93,7 +91,6 @@ namespace TheYawningDragon.Ascendancy.Library
                         {
                             subChunkHeader.Size = reader.ReadUInt32();
                             subChunkHeader.Type = reader.ReadUInt16();
-
                             
                             switch (subChunkHeader.Type)
                             { 
@@ -130,7 +127,6 @@ namespace TheYawningDragon.Ascendancy.Library
                                 case 7:
                                     bitmap = new Bitmap(Bitmaps[Bitmaps.Count - 1]);
                                     uint lineCount, opCode, opCodePart;
-
 
                                     lineCount = reader.ReadUInt16();
                                     bytesRead = 8;
@@ -199,9 +195,6 @@ namespace TheYawningDragon.Ascendancy.Library
                                                 default:
                                                     throw new Exception("Unsupported opCode.");
                                             }
-
-
-
                                         } while (opCodePart != 0);
                                         currentY++;
                                     }
@@ -210,9 +203,7 @@ namespace TheYawningDragon.Ascendancy.Library
 
                                     if (subChunkHeader.Size != bytesRead)
                                         reader.ReadBytes((int)(subChunkHeader.Size - bytesRead));
-                                    
-                                    
-                                    
+                                                                      
                                     break;
 
                                 case 15:
@@ -267,29 +258,18 @@ namespace TheYawningDragon.Ascendancy.Library
                                     reader.ReadBytes((int)subChunkHeader.Size - 6);
 
                                     break;
-
                                 default:
                                     throw new Exception("Unsupported FLC subchunk type.");
                             }
-
                         }
 
-
-                            break;
+                        break;
                     default:
-                        throw new Exception("Unsupported FLC chunk type.");
-
-                
+                        throw new Exception("Unsupported FLC chunk type.");              
                 }
 
-
-                chunkNumber++;
-                
-              
-            
+                chunkNumber++;            
             }
-
-
 
             reader.Close();
             stream.Close();

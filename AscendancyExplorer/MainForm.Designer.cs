@@ -1,4 +1,4 @@
-﻿namespace TheYawningDragon.AscendancyExplorer
+﻿namespace Ascendancy.Explorer
 {
     partial class MainForm
     {
@@ -348,7 +348,7 @@
             // firstPictureToolStripButton
             // 
             this.firstPictureToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.firstPictureToolStripButton.Image = global::TheYawningDragon.AscendancyExplorer.Properties.Resources.control_start_blue;
+            this.firstPictureToolStripButton.Image = global::Ascendancy.Explorer.Properties.Resources.control_start_blue;
             this.firstPictureToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.firstPictureToolStripButton.Name = "firstPictureToolStripButton";
             this.firstPictureToolStripButton.Size = new System.Drawing.Size(23, 22);
@@ -358,7 +358,7 @@
             // prevPictureToolStripButton
             // 
             this.prevPictureToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.prevPictureToolStripButton.Image = global::TheYawningDragon.AscendancyExplorer.Properties.Resources.control_prev_blue;
+            this.prevPictureToolStripButton.Image = global::Ascendancy.Explorer.Properties.Resources.control_prev_blue;
             this.prevPictureToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.prevPictureToolStripButton.Name = "prevPictureToolStripButton";
             this.prevPictureToolStripButton.Size = new System.Drawing.Size(23, 22);
@@ -375,7 +375,7 @@
             // nextPictureToolStripButton
             // 
             this.nextPictureToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.nextPictureToolStripButton.Image = global::TheYawningDragon.AscendancyExplorer.Properties.Resources.control_play_blue;
+            this.nextPictureToolStripButton.Image = global::Ascendancy.Explorer.Properties.Resources.control_play_blue;
             this.nextPictureToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.nextPictureToolStripButton.Name = "nextPictureToolStripButton";
             this.nextPictureToolStripButton.Size = new System.Drawing.Size(23, 22);
@@ -385,7 +385,7 @@
             // lastPictureToolStripButton
             // 
             this.lastPictureToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.lastPictureToolStripButton.Image = global::TheYawningDragon.AscendancyExplorer.Properties.Resources.control_end_blue;
+            this.lastPictureToolStripButton.Image = global::Ascendancy.Explorer.Properties.Resources.control_end_blue;
             this.lastPictureToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.lastPictureToolStripButton.Name = "lastPictureToolStripButton";
             this.lastPictureToolStripButton.Size = new System.Drawing.Size(23, 22);
@@ -442,7 +442,7 @@
             // playMusicToolStripButton
             // 
             this.playMusicToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.playMusicToolStripButton.Image = global::TheYawningDragon.AscendancyExplorer.Properties.Resources.control_play_blue;
+            this.playMusicToolStripButton.Image = global::Ascendancy.Explorer.Properties.Resources.control_play_blue;
             this.playMusicToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.playMusicToolStripButton.Name = "playMusicToolStripButton";
             this.playMusicToolStripButton.Size = new System.Drawing.Size(23, 22);
@@ -452,7 +452,7 @@
             // stopMusicToolStripButton
             // 
             this.stopMusicToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.stopMusicToolStripButton.Image = global::TheYawningDragon.AscendancyExplorer.Properties.Resources.control_stop_blue;
+            this.stopMusicToolStripButton.Image = global::Ascendancy.Explorer.Properties.Resources.control_stop_blue;
             this.stopMusicToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.stopMusicToolStripButton.Name = "stopMusicToolStripButton";
             this.stopMusicToolStripButton.Size = new System.Drawing.Size(23, 22);
@@ -522,7 +522,7 @@
             // playVideoToolStripButton
             // 
             this.playVideoToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.playVideoToolStripButton.Image = global::TheYawningDragon.AscendancyExplorer.Properties.Resources.control_play_blue;
+            this.playVideoToolStripButton.Image = global::Ascendancy.Explorer.Properties.Resources.control_play_blue;
             this.playVideoToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.playVideoToolStripButton.Name = "playVideoToolStripButton";
             this.playVideoToolStripButton.Size = new System.Drawing.Size(23, 22);
@@ -532,7 +532,7 @@
             // stopVideoToolStripButton
             // 
             this.stopVideoToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.stopVideoToolStripButton.Image = global::TheYawningDragon.AscendancyExplorer.Properties.Resources.control_stop_blue;
+            this.stopVideoToolStripButton.Image = global::Ascendancy.Explorer.Properties.Resources.control_stop_blue;
             this.stopVideoToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.stopVideoToolStripButton.Name = "stopVideoToolStripButton";
             this.stopVideoToolStripButton.Size = new System.Drawing.Size(23, 22);

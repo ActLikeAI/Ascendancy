@@ -10,9 +10,9 @@ using System.Text;
 using System.Windows.Forms;
 using System.IO;
 using System.Media;
-using TheYawningDragon.Ascendancy.Library;
+using Ascendancy.Assets;
 
-namespace TheYawningDragon.AscendancyExplorer
+namespace Ascendancy.Explorer
 {
     public partial class MainForm : Form
     {

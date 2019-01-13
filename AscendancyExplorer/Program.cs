@@ -5,7 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
 
-namespace TheYawningDragon.AscendancyExplorer
+namespace Ascendancy.Explorer
 {
     static class Program
     {

@@ -8,8 +8,8 @@
     <ProjectGuid>{3D301418-A0EB-48D1-91EA-A021EF88B738}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TheYawningDragon.Ascendancy.Library</RootNamespace>
-    <AssemblyName>AscendancyLibrary</AssemblyName>
+    <RootNamespace>Ascendancy.Assets</RootNamespace>
+    <AssemblyName>Ascendancy.Assets</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <IsWebBootstrapper>false</IsWebBootstrapper>

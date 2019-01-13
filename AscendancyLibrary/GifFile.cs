@@ -1,13 +1,10 @@
 ﻿// Copyright (c) 2019 Attila Cséki.
 // Licensed under the MIT license. See LICENCE file in the project root for full license information.
 
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Text;
 using System.Drawing;
+using System.IO;
 
-namespace TheYawningDragon.Ascendancy.Library
+namespace Ascendancy.Assets
 {
     public class GifFile : CobFile
     {
@@ -18,6 +15,7 @@ namespace TheYawningDragon.Ascendancy.Library
         public Bitmap Bitmap
         { get { return bitmap; } }
 
+
         private GifFile(CobArchive parent, string fileName)
             : base(parent, fileName)
         {
@@ -25,10 +23,10 @@ namespace TheYawningDragon.Ascendancy.Library
             bitmap = new Bitmap(stream);
         }
 
+
         public new static GifFile Load(CobArchive parent, string fileName)
         {
             return new GifFile(parent, fileName);
         }
-
     }
 }

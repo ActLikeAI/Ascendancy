@@ -1,13 +1,11 @@
 ﻿// Copyright (c) 2019 Attila Cséki.
 // Licensed under the MIT license. See LICENCE file in the project root for full license information.
 
-using System;
 using System.Collections.Generic;
-using System.Text;
-using System.IO;
 using System.Drawing;
+using System.IO;
 
-namespace TheYawningDragon.Ascendancy.Library
+namespace Ascendancy.Assets
 {
     public class FntFile : CobFile
     {
@@ -53,7 +51,6 @@ namespace TheYawningDragon.Ascendancy.Library
                 offsets[i] = reader.ReadInt32();
             offsets[characterCount] = content.Length;
 
-
             int width, color;
             bitmaps = new Bitmap[characterCount];
 
@@ -76,14 +73,16 @@ namespace TheYawningDragon.Ascendancy.Library
                     }
             }
 
-                reader.Close();
+            reader.Close();
             stream.Close();
         }
+
 
         public new static FntFile Load(CobArchive parent, string fileName)
         {
             return new FntFile(parent, fileName);
         }
+
 
         public IEnumerator<Bitmap> GetEnumerator()
         {
