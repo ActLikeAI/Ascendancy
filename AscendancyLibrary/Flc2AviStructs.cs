@@ -1,16 +1,3 @@
-//          FileSize: Cardinal;
-//          FlcType, FramesInFirstSegment, Width, Height, BitsPerPixel, Flags: Word;
-//          DelayBetweenFrames: Cardinal;
-//          Reserved1: Word;
-//          DateCreated, ApplicationCreated, DateUpdated, ApplicationUpdated: Cardinal;
-//          AspectX, AspectY, ExtraFlags, KeyFrames, TotalFrames: Word;
-//          RequiredMemory: Cardinal;
-//          MaximumRegions, NumberTransparentLevels: Word;
-//          Reserved2: Array [1..24] of Byte;
-//          Frame1Offset, Frame2Offset: Cardinal;
-//          Reserved3: Array [1..40] of Byte;
-
-
 public struct FlcHeader
 {
     public uint FileSize;

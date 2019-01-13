@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("Ascendancy Explorer")]
 [assembly: AssemblyDescription("Art assets viewer for Ascendancy")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("ActLikeAI")]
+[assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("Ascendancy Explorer")]
-[assembly: AssemblyCopyright("Copyright © ActLikeAI 2009")]
+[assembly: AssemblyCopyright("Copyright © 2019 Atila Čeki")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
