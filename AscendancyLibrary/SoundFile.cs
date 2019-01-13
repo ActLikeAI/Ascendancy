@@ -1,8 +1,4 @@
-using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace ActLikeAI.Ascendancy.Library
+namespace Ascendancy.Assets
 {
     public class SoundFile : CobFile
     {
@@ -13,6 +9,5 @@ namespace ActLikeAI.Ascendancy.Library
         protected SoundFile(CobArchive parent, string fileName)
             : base(parent, fileName)
         {}
-
     }
 }

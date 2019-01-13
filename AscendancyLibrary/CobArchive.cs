@@ -1,10 +1,8 @@
 using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Text;
 using System.Reflection;
 
-namespace ActLikeAI.Ascendancy.Library
+namespace Ascendancy.Assets
 {
     public class CobArchive
     {
@@ -15,12 +13,14 @@ namespace ActLikeAI.Ascendancy.Library
         public string ArchiveName
         { get { return archiveName; } }
         
+
         private int fileCount;
         /// <summary>
         /// Number of files stored in the archive
         /// </summary>
         public int FileCount
         { get { return fileCount; } }
+
 
         private string[] files;
         /// <summary>
@@ -29,12 +29,14 @@ namespace ActLikeAI.Ascendancy.Library
         public string[] Files
         { get { return files; } }
 
+
         private int[] offsets;
         /// <summary>
         /// List of the offsets of individual files.
         /// </summary>
         public int[] Offsets
         { get { return offsets; } }
+
 
         private int[] lengths;
         /// <summary>
@@ -43,13 +45,14 @@ namespace ActLikeAI.Ascendancy.Library
         public int[] Lengths
         { get { return lengths; } }
 
+
         public CobArchive(string fileName)
         {
             this.archiveName = fileName;
 
             FileInfo fileInfo = new FileInfo(fileName);
             if (!fileInfo.Exists)
-                throw new ArgumentException(String.Format("{0} doesn't exist"));
+                throw new ArgumentException(String.Format("{0} doesn't exist", fileName));
 
             FileStream file = new FileStream(fileName, FileMode.Open);
             BinaryReader reader = new BinaryReader(file);
@@ -74,6 +77,7 @@ namespace ActLikeAI.Ascendancy.Library
             file.Close();
         }
 
+
         public T Load<T>(string fileName) where T : CobFile
         {
             int index = -1;
@@ -95,13 +99,11 @@ namespace ActLikeAI.Ascendancy.Library
         }
 
 
-
-
         public static CobArchive Load(string fileName) 
         {
             FileInfo fileInfo = new FileInfo(fileName);
             if (!fileInfo.Exists)
-                throw new ArgumentException(String.Format("{0} doesn't exist"));
+                throw new ArgumentException(String.Format("{0} doesn't exist", fileName));
                         
             FileStream file = new FileStream (fileName, FileMode.Open);
             BinaryReader reader = new BinaryReader(file);
@@ -125,8 +127,6 @@ namespace ActLikeAI.Ascendancy.Library
             FileStream outFile;
             BinaryWriter writter;
 
-
-
             files = (byte[][])Array.CreateInstance(typeof(byte[]), fileCount);
             for (int i = 0; i < fileCount; i++)
             {
@@ -139,7 +139,6 @@ namespace ActLikeAI.Ascendancy.Library
                 writter.Close();
                 outFile.Close();
             }
-
 
             reader.Close();
             file.Close();

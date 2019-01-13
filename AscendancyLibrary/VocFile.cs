@@ -1,9 +1,7 @@
 using System;
-using System.Collections.Generic;
-using System.Text;
 using System.IO;
 
-namespace ActLikeAI.Ascendancy.Library
+namespace Ascendancy.Assets
 {
     public class VocFile : SoundFile
     {
@@ -122,6 +120,7 @@ namespace ActLikeAI.Ascendancy.Library
             writer.Close();
             wavStream.Close();
         }
+
 
         public new static VocFile Load(CobArchive parent, string fileName)
         {

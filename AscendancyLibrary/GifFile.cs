@@ -1,10 +1,7 @@
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Text;
 using System.Drawing;
+using System.IO;
 
-namespace ActLikeAI.Ascendancy.Library
+namespace Ascendancy.Assets
 {
     public class GifFile : CobFile
     {
@@ -15,6 +12,7 @@ namespace ActLikeAI.Ascendancy.Library
         public Bitmap Bitmap
         { get { return bitmap; } }
 
+
         private GifFile(CobArchive parent, string fileName)
             : base(parent, fileName)
         {
@@ -22,10 +20,10 @@ namespace ActLikeAI.Ascendancy.Library
             bitmap = new Bitmap(stream);
         }
 
+
         public new static GifFile Load(CobArchive parent, string fileName)
         {
             return new GifFile(parent, fileName);
         }
-
     }
 }

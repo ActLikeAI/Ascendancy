@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace ActLikeAI.AscendancyExplorer
+namespace Ascendancy.Explorer
 {
     public class CobLoaderArguments
     {

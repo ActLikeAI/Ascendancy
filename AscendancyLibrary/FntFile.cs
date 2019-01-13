@@ -1,10 +1,8 @@
-using System;
 using System.Collections.Generic;
-using System.Text;
-using System.IO;
 using System.Drawing;
+using System.IO;
 
-namespace ActLikeAI.Ascendancy.Library
+namespace Ascendancy.Assets
 {
     public class FntFile : CobFile
     {
@@ -50,7 +48,6 @@ namespace ActLikeAI.Ascendancy.Library
                 offsets[i] = reader.ReadInt32();
             offsets[characterCount] = content.Length;
 
-
             int width, color;
             bitmaps = new Bitmap[characterCount];
 
@@ -73,14 +70,16 @@ namespace ActLikeAI.Ascendancy.Library
                     }
             }
 
-                reader.Close();
+            reader.Close();
             stream.Close();
         }
+
 
         public new static FntFile Load(CobArchive parent, string fileName)
         {
             return new FntFile(parent, fileName);
         }
+
 
         public IEnumerator<Bitmap> GetEnumerator()
         {

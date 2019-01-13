@@ -1,13 +1,9 @@
 using System;
-using System.Collections.Generic;
-using System.Text;
-using System.IO;
 using System.Drawing;
 
-namespace ActLikeAI.Ascendancy.Library
+namespace Ascendancy.Assets
 {
     public class PalFile : CobFile
-
     {
         private Color[] palette;
         public Color this[int index]
@@ -23,6 +19,7 @@ namespace ActLikeAI.Ascendancy.Library
                 palette[i] = Color.FromArgb(content[3 * i] * 4, content[3 * i + 1] * 4, content[3 * i + 2] * 4);
         }
 
+
         public Bitmap GetBitmap()
         {
             Bitmap bmp = new Bitmap((int)Math.Sqrt(palette.Length), (int)Math.Sqrt(palette.Length));
@@ -31,6 +28,7 @@ namespace ActLikeAI.Ascendancy.Library
 
             return bmp;
         }
+
 
         public new static PalFile Load(CobArchive parent, string fileName)
         {

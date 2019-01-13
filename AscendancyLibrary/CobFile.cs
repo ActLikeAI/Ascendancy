@@ -1,9 +1,7 @@
 using System;
-using System.Collections.Generic;
-using System.Text;
 using System.IO;
 
-namespace ActLikeAI.Ascendancy.Library
+namespace Ascendancy.Assets
 {
     public class CobFile
     {
@@ -42,7 +40,6 @@ namespace ActLikeAI.Ascendancy.Library
                     break;
                 }
 
-
             if (index < 0)
                 throw new ArgumentException("Requested file doesn't exist");
 
@@ -59,8 +56,8 @@ namespace ActLikeAI.Ascendancy.Library
 
             reader.Close();
             file.Close();
-
         }
+
 
         public void Save(string outDirectory)
         {
@@ -92,13 +89,14 @@ namespace ActLikeAI.Ascendancy.Library
             file.Close();        
         }
 
+
         public void Save()
         { this.Save(Directory.GetCurrentDirectory()); }
         
+
         public static CobFile Load(CobArchive parent, string fileName)
         {
             return new CobFile(parent, fileName);
         }
-
     }
 }

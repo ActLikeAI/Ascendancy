@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
 
-namespace ActLikeAI.AscendancyExplorer
+namespace Ascendancy.Explorer
 {
     static class Program
     {

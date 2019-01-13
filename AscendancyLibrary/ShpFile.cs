@@ -1,14 +1,11 @@
-using System;
 using System.Collections.Generic;
-using System.Text;
-using System.IO;
 using System.Drawing;
+using System.IO;
 
-namespace ActLikeAI.Ascendancy.Library
+namespace Ascendancy.Assets
 {
     public class ShpFile : CobFile
-    {
-        
+    {       
         private int imageCount;
         /// <summary>
         /// Number of images stored in .shp file
@@ -39,7 +36,6 @@ namespace ActLikeAI.Ascendancy.Library
 
             MemoryStream stream = new MemoryStream(this.content);
             BinaryReader reader = new BinaryReader(stream);
-
 
             reader.ReadInt32();
             imageCount = reader.ReadInt32();
@@ -77,13 +73,10 @@ namespace ActLikeAI.Ascendancy.Library
                 if (yEnd > height)
                     yEnd = height - 1 - yCenter;
 
-
-
                 bitmaps[n] = new Bitmap(width, height);
                 for (int i = 0; i < bitmaps[n].Width; i++)
                     for (int j = 0; j < bitmaps[n].Height; j++)
                         bitmaps[n].SetPixel(i, j, Color.Transparent);
-
             
                 x = xStart;
                 y = yStart;
@@ -146,20 +139,20 @@ namespace ActLikeAI.Ascendancy.Library
             }
 
             reader.Close();
-            stream.Close();
-        
+            stream.Close();        
         }
+
 
         public new static ShpFile Load(CobArchive parent, string fileName)
         {
             return new ShpFile(parent, fileName);
         }
 
+
         public IEnumerator<Bitmap> GetEnumerator()
         {
             for (int i = 0; i < imageCount; i++) 
                 yield return bitmaps[i];
         }
-
     }
 }
