@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.25920.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AscendancyLibrary", "AscendancyLibrary\AscendancyLibrary.csproj", "{3D301418-A0EB-48D1-91EA-A021EF88B738}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ascendancy.Assets", "Ascendancy.Assets\Ascendancy.Assets.csproj", "{3D301418-A0EB-48D1-91EA-A021EF88B738}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AscendancyExplorer", "AscendancyExplorer\AscendancyExplorer.csproj", "{504D1B65-9A61-420C-A69C-C9758C3D0EE3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ascendancy.Explorer", "Ascendancy.Explorer\Ascendancy.Explorer.csproj", "{504D1B65-9A61-420C-A69C-C9758C3D0EE3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
